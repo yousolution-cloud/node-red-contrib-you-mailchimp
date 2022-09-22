@@ -235,8 +235,8 @@
 </style>
   
 <!-- Documentation -->
-<!-- <script type="text/html" data-help-name="serviceSap">
-  <p>Patch action</p>
+<script type="text/html" data-help-name="marketingMailchimp">
+  <p>Marketing APIs</p>
   
   <h3>Inputs</h3>
       <dl class="message-properties">
@@ -244,18 +244,22 @@
             <span class="property-type">string</span>
           </dt>
           <dd> the node's name </dd>
-          <dt>Entity
+          <dt>Token
             <span class="property-type">string</span>
           </dt>
-          <dd> the entity name of SAP </dd>
-          <dt>entityId
-            <span class="property-type">number | string</span>
+          <dd> OAuth2 token </dd>
+          <dt> Server
+            <span class="property-type">string</span>
           </dt>
-          <dd> the id of the entity of SAP </dd>
-          <dt>bodyPatch
+          <dd> the id of target server </dd>
+          <dt> Resource
             <span class="property-type">object</span>
           </dt>
-          <dd> data to update to the entity </dd>
+          <dd> Marketing APIs recouce to work with </dd>
+          <dt> Action
+            <span class="property-type">object</span>
+          </dt>
+          <dd> Action to perform on the Resource </dd>
       </dl>
   
    <h3>Outputs</h3>
@@ -263,19 +267,16 @@
            <li>Standard output
                <dl class="message-properties">
                    <dt>payload <span class="property-type">string</span></dt>
-                   <dd>the standard output of the command.</dd>
+                   <dd>the standard output of the action.</dd>
                </dl>
            </li>
        </ol>
   
   <h3>Details</h3>
-      <p>this node is used to update the entity of SAP.
-        See the examples to understand how to use it.
-      </p>
+      <p>this node is used to perform Marketing APIs</p>
   
   <h3>References</h3>
       <ul>
-          <li><a href="https://sap-samples.github.io/smb-summit-hackathon/b1sl.html" target="_black">Service layer API docs</a> - for more details </li>
-          <li><a href="https://github.com/yousolution-cloud/node-red-contrib-you-sap-service-layer">@yousolution-cloud/node-red-contrib-you-sap-service-layer</a> - the nodes github repository</li>
+          <li><a href="https://github.com/yousolution-cloud/node-red-contrib-you-mailchimp">@yousolution-cloud/node-red-contrib-you-mailchimp</a> - the nodes github repository</li>
       </ul>
-</script> -->
+</script>

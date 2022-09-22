@@ -24,9 +24,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.78",
-    "@yousolution/node-red-contrib-you-marketing-mailchimp": "file:data/yousolution-node-red-contrib-you-marketing-mailchimp-0.0.1.tgz",
-    "axios": "^0.23.0",
-    "node-red-contrib-oauth2": "~4.0.1"
+    "@yousolution/node-red-contrib-you-marketing-mailchimp": "file:data/yousolution-node-red-contrib-you-marketing-mailchimp-0.0.1.tgz"
   },
   "repository": {
     "type": "git",
