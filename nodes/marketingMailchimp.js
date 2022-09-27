@@ -14,19 +14,19 @@ module.exports = function (RED) {
     node.on('input', async (msg, send, done) => {
       let resourceAction = {};
 
-      resources[config.resourceName].forEach(action => {
+      resources[config.resourceName].forEach((action) => {
         if (action.name == config.resource) {
           resourceAction = action;
         }
       });
 
       const pathParams = [];
-      resourceAction.pathParams.forEach(param => {
+      resourceAction.pathParams.forEach((param) => {
         pathParams.push({
           name: param.name,
           value: config[param.name],
-        })
-      })
+        });
+      });
 
       try {
         if (resourceAction.bodyParams) {
@@ -49,7 +49,7 @@ module.exports = function (RED) {
       }
     });
   }
-   
+
   RED.httpAdmin.get('/resources', RED.auth.needsPermission('marketingMailchimp.read'), (req, res) => {
     res.json(resources);
   });

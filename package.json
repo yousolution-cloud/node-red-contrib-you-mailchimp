@@ -1,10 +1,10 @@
 {
   "name": "@yousolution/node-red-contrib-you-marketing-mailchimp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial module Marketing API Mailchimp for NODE-RED",
   "license": "MIT",
   "scripts": {
-    "update": "npm pack && mv yousolution-node-red-contrib-you-marketing-mailchimp-0.0.1.tgz ./data && cd data && npm i yousolution-node-red-contrib-you-marketing-mailchimp-0.0.1.tgz && docker compose restart",
+    "update": "npm pack && mv yousolution-node-red-contrib-you-marketing-mailchimp-$npm_package_version.tgz ./data && cd data && npm i yousolution-node-red-contrib-you-marketing-mailchimp-$npm_package_version.tgz && docker compose restart",
     "test": "mocha 'test/**/*.spec.js'",
     "coverage": "nyc npm run test"
   },
@@ -23,8 +23,7 @@
     }
   },
   "dependencies": {
-    "@mailchimp/mailchimp_marketing": "^3.0.78",
-    "@yousolution/node-red-contrib-you-marketing-mailchimp": "file:data/yousolution-node-red-contrib-you-marketing-mailchimp-0.0.1.tgz"
+    "@mailchimp/mailchimp_marketing": "^3.0.78"
   },
   "repository": {
     "type": "git",

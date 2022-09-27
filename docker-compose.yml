@@ -5,6 +5,6 @@ services:
     image: nodered/node-red:2.0.6-12
     # network_mode: host
     volumes:
-      - ./:/data
+      - ./data:/data
     ports:
       - '1880:1880'
